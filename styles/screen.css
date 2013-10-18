@@ -66,6 +66,9 @@ table {
 /* line 53, partials/_reset.scss */
 code {
   font-family: courier, fixed-width;
+  background-color: #333333;
+  border-radius: .2em;
+  padding: .15em;
 }
 
 /* line 1, partials/_input.scss */
