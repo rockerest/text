@@ -1,0 +1,90 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 18, partials/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: helvetica, arial, sans-serif;
+  color: #EEEEFF;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 30, partials/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 33, partials/_reset.scss */
+body {
+  padding: 1.5em;
+  line-height: 1;
+  background-color: #000000;
+}
+
+/* line 38, partials/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 41, partials/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 45, partials/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 49, partials/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 53, partials/_reset.scss */
+code {
+  font-family: courier, fixed-width;
+}
+
+/* line 1, partials/_input.scss */
+textarea {
+  width: 90%;
+  height: 20em;
+  margin: 1em auto;
+  display: block;
+  background-color: #111111;
+  color: #FFFFFF;
+}
+
+/* line 1, partials/_chrome.scss */
+#output {
+  line-height: 1.25em;
+  letter-spacing: 1px;
+}
+
+/* line 6, partials/_chrome.scss */
+#history {
+  margin: 0 2.5em;
+}
