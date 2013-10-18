@@ -28,7 +28,7 @@ define(
             ta.focus();
 
             if( !response ){
-                $( "#output" ).html( "That doesn't seem like something I can do." );
+                $( "#output" ).html( "That doesn't seem like something I can do.<br />" );
             }
             else{
                 $( "#output" ).html( response + "<br />" );
