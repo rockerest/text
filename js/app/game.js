@@ -16,18 +16,22 @@ define(
         };
 
         Game.prototype.do = function( keywords ){
-            var last = this.node.paths;
+            var last = this.node.paths,
+                setNode = true;
 
             _.each( keywords, function( word ){
                 if( _.has( last, word ) ){
                     last = last[ word ];
                 }
                 else{
+                    setNode = false;
                     return false;
                 }
             });
 
-            this.node = this.game[ last[1] ];
+            if( setNode ){
+                this.node = this.game[ last[1] ];
+            }
 
             return last[0];
         };
