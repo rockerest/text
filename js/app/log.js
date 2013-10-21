@@ -4,7 +4,7 @@ define(
         var Log = {};
 
         Log.add = function( input, response ){
-            if( !response ){
+            if( response === undefined ){
                 response = input;
                 input = undefined;
             }
@@ -14,13 +14,12 @@ define(
                 content     = $( "<div class=\"w80\"></div>" );
 
             if( !response ){
-                $( "#output" ).html( "<p>That doesn't seem like something I can do.</p><br />" );
+                content.html( "<p>That doesn't seem like something I can do.</p><br />" );
             }
             else{
-                $( "#output" ).html( response + "<br />" );
+                content.html( response + "<br />" );
             }
 
-            content.html( $( "#output" ).html() );
             if( input ){
                 content.prepend( "<div class=\"input\"><code>" + input.trim().toLowerCase() + "</code></div>" );
             }

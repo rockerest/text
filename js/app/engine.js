@@ -17,7 +17,7 @@ define(
 
         Engine.step = function( ta ){
             var words       = ta.val().trim().toLowerCase().split( " " ),
-                response    = game.do( words );
+                response    = game.do( words ) || "";
 
             Log.add( ta.val(), response );
 
