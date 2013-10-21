@@ -1,0 +1,17 @@
+#output {
+  line-height: 1.25em;
+  letter-spacing: 1px; }
+
+#history {
+  margin: 0 2.5em; }
+
+#history .entry {
+  border-bottom: 4px dashed #333333; }
+
+.w20 {
+  width: 20%;
+  float: left; }
+
+.w80 {
+  width: 80%;
+  float: left; }

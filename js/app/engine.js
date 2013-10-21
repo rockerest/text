@@ -1,6 +1,6 @@
 define(
-    ["jquery", "moment", "game"],
-    function( $, moment, Game ){
+    ["jquery", "moment", "game", "log"],
+    function( $, moment, Game, Log ){
         var Engine = {},
             game = new Game( "data/game.json" );
 
@@ -16,23 +16,13 @@ define(
         };
 
         Engine.step = function( ta ){
-            var words = ta.val().trim().split( " " ),
-                response = game.do( words ),
-                time = $( "<div><span class=\"time-ago\" data-time=\"" + (new Date()).getTime() + "\"></span></div>" );
+            var words       = ta.val().trim().toLowerCase().split( " " ),
+                response    = game.do( words );
 
-            $( "#history" ).prepend( $( "#output" ).html() )
-                .prepend( "<hr />" )
-                .prepend( time.html() + "&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<code>" + ta.val() + "</code><br />" );
+            Log.add( ta.val(), response );
 
             ta.val( '' );
             ta.focus();
-
-            if( !response ){
-                $( "#output" ).html( "That doesn't seem like something I can do.<br />" );
-            }
-            else{
-                $( "#output" ).html( response + "<br />" );
-            }
         };
 
         return Engine;

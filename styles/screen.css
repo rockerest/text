@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-/* line 18, partials/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,71 +22,76 @@ time, mark, audio, video {
   font: inherit;
   font-family: helvetica, arial, sans-serif;
   color: #EEEEFF;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 30, partials/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
-/* line 33, partials/_reset.scss */
 body {
   padding: 1.5em;
   line-height: 1;
-  background-color: #000000;
-}
+  background-color: #000000; }
 
-/* line 38, partials/_reset.scss */
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
-/* line 41, partials/_reset.scss */
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
-/* line 45, partials/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none;
-}
+  content: none; }
 
-/* line 49, partials/_reset.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
-/* line 53, partials/_reset.scss */
 code {
   font-family: courier, fixed-width;
   background-color: #333333;
   border-radius: .2em;
-  padding: .15em;
-}
+  padding: .15em; }
 
-/* line 1, partials/_input.scss */
+.clear:before,
+.clear:after {
+  content: " ";
+  display: table; }
+
+.clear:after {
+  clear: both; }
+
+.clear {
+  *zoom: 1; }
+
 textarea {
   width: 90%;
   height: 20em;
   margin: 1em auto;
   display: block;
   background-color: #111111;
-  color: #FFFFFF;
-}
+  color: #FFFFFF; }
 
-/* line 1, partials/_chrome.scss */
 #output {
   line-height: 1.25em;
-  letter-spacing: 1px;
-}
+  letter-spacing: 1px; }
 
-/* line 6, partials/_chrome.scss */
 #history {
-  margin: 0 2.5em;
-}
+  margin: 0 2.5em; }
+
+#history .entry {
+  border-bottom: 4px dashed #333333;
+  padding: 1.5em; }
+
+#history .input {
+  margin-bottom: .5em; }
+
+.w20 {
+  width: 20%;
+  float: left; }
+
+.w80 {
+  width: 80%;
+  float: left; }
