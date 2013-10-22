@@ -1,6 +1,6 @@
 define(
-    ["jquery"],
-    function( $ ){
+    ["jquery", "underscore"],
+    function( $, _ ){
         var Log = {};
 
         Log.add = function( input, response ){
@@ -17,7 +17,16 @@ define(
                 content.html( "<p>That doesn't seem like something I can do.</p><br />" );
             }
             else{
-                content.html( response + "<br />" );
+                if( typeof response === "string" ){
+                    content.html( "<p>" + response + "</p><br />" );
+                }
+                else if( response instanceof Array ){
+                    _( response ).each( function( line ){
+                        content.append( "<p>" + line + "</p>" );
+                    });
+
+                    content.append( "<br />" );
+                }
             }
 
             if( input ){

@@ -2,22 +2,37 @@
     "0": {
         "paths": {
             "look": {
-                "around": [
-                    "<p>All around you, beach.</p><p>Ahead, a light forest of what appears to be palm trees and scrub pine growing in sandy stone.</p>The rotting remains of a small rowboat are nearby, and the ocean stretches endlessly behind you.</p><br /><p>Looks like you're in trouble.</p>",
-                    0
-                ]
+                "around": {
+                    "lines": [
+                        "All around you, beach.",
+                        "Ahead, a light forest of what appears to be palm trees and scrub pine growing in sandy stone.",
+                        "The rotting remains of a small rowboat are nearby, and the ocean stretches endlessly behind you.",
+                        "",
+                        "Looks like you're in trouble."
+                    ],
+                    "nextNode": 0
+                }
             },
             "eat": {
-                "sand": [
-                    "<p>Tastes pretty bad.</p><p>No apparent health benefits were imbued by the sand.</p><p>I'm pretty sure it's just sand.</p>",
-                    0
-                ]
+                "sand": {
+                    "lines": [
+                        "Tastes pretty bad.",
+                        "No apparent health benefits were imbued by the sand.",
+                        "I'm pretty sure it's just sand."
+                    ],
+                    "nextNode": 0
+                }
             },
             "examine": {
-                "boat": [
-                    "<p>It's not really a boat any more. More like rotting boards in a rough boat shape.</p><p>There's a crab on the sand under the boat.</p><p>He's pretty crabby.</p><p>Hahahaha....</p>",
-                    0
-                ]
+                "boat": {
+                    "lines": [
+                        "It's not really a boat any more. More like rotting boards in a rough boat shape.",
+                        "There's a crab on the sand under the boat.",
+                        "He's pretty crabby.",
+                        "Hahahaha...."
+                    ],
+                    "nextNode": 0
+                }
             }
         }
     }

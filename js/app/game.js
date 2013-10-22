@@ -19,8 +19,8 @@ define(
             var last = this.node.paths,
                 setNode = true;
 
-            _.each( keywords, function( word ){
-                if( _.has( last, word ) ){
+            _( keywords ).each( function( word ){
+                if( _( last ).has( word ) ){
                     last = last[ word ];
                 }
                 else{
@@ -29,11 +29,11 @@ define(
                 }
             });
 
-            if( setNode ){
-                this.node = this.game[ last[1] ];
+            if( setNode && _( last ).has( "lines" ) ){
+                this.node = this.game[ last.nextNode ];
             }
 
-            return last[0];
+            return last.lines;
         };
 
         return Game;
