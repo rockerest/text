@@ -29,7 +29,7 @@ define(
                 }
             });
 
-            if( setNode && _( last ).has( "lines" ) ){
+            if( setNode && _( last ).has( "nextNode" ) ){
                 this.node = this.game[ last.nextNode ];
             }
 
